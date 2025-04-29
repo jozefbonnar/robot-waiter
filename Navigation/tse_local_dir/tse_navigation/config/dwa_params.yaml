@@ -1,0 +1,10 @@
+DWAPlannerROS:
+  max_vel_x: 0.5      # Max speed: 0.5 m/s
+  min_vel_x: 0.1
+  max_vel_theta: 1.0  # Max rotation: 1 rad/s
+  acc_lim_x: 2.5
+  acc_lim_theta: 3.2
+  sim_time: 1.5       # Simulate 1.5s ahead
+  path_distance_bias: 32.0
+  goal_distance_bias: 24.0
+  occdist_scale: 0.01

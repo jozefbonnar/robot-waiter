@@ -1,0 +1,66 @@
+# Independent settings for the planner's costmap
+global_costmap:
+  map_type: costmap
+
+  global_frame    : map
+  robot_base_frame: base_footprint
+  static_map: false
+  rolling_window: true
+  update_frequency : 10.0
+  publish_frequency: 1.0
+
+  transform_tolerance: 0.2
+
+  track_unknown_space: true
+  unknown_cost_value : 255
+  width: 50.0
+  height: 50.0
+  resolution: 0.05
+  robot_radius: 0.275
+
+  #plugins are loaded on a separate file
+
+  static_layer:
+    enabled  : true
+    map_topic: '/projected_map'
+
+  obstacle_laser_layer:
+    enabled: true
+    observation_sources: base_scan velodyne
+    combination_method: 1 # can erase static layer
+
+    base_scan:
+      sensor_frame: base_laser_link
+      data_type: LaserScan
+      topic: '/scan'
+      expected_update_rate: 0.3
+      observation_persistence: 0.0
+      inf_is_valid: true
+      marking: true
+      clearing: true
+      raytrace_range: 4.0
+      obstacle_range: 3.0
+
+    velodyne:
+      sensor_frame: velodyne
+      data_type: PointCloud2
+      topic: '/velodyne_points'
+      marking: true
+      clearing: true
+      min_obstacle_height: 0.2
+      max_obstacle_height: 2.5
+      
+      
+  obstacle_sonar_layer:
+    enabled: false
+    ns: ""
+    topics: ["/sonar_base"]
+    no_readings_timeout: 0.0
+    clear_threshold: 0.20
+    mark_threshold: 0.80
+    clear_on_max_reading: true
+
+  inflation_layer:
+    enabled            : true
+    inflation_radius   : 0.55
+    cost_scaling_factor: 25.0

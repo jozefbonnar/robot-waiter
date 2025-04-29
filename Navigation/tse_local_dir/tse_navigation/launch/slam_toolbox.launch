@@ -1,0 +1,11 @@
+<launch>
+  <!-- Global level remap -->
+  <remap from="/map" to="/projected_map"/>
+  <remap from="map" to="/projected_map"/>
+  
+  <include file="$(find slam_toolbox)/online_sync.launch">
+    <!-- Include level remap -->
+    <remap from="/map" to="/projected_map"/>
+    <remap from="map" to="/projected_map"/>
+  </include>
+</launch>

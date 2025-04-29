@@ -1,0 +1,10 @@
+amcl:
+  min_particles: 100
+  max_particles: 1000
+  update_min_d: 0.2    # Update pose after moving 0.2m
+  update_min_a: 0.5    # Update after rotating 0.5rad
+  laser_max_range: 10.0
+  laser_model_type: likelihood_field
+  initial_pose_x: 0.0
+  initial_pose_y: 0.0
+  initial_pose_a: 0.0
