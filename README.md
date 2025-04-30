@@ -21,7 +21,11 @@ The system was developed for simulation environments with the capability to be d
 
 ### Speech Recognition
 
-#TODO
+The speech recognition system is responsible for:
+- Listening to customer input
+- Taking down orders
+- Confirming orders
+- Relaying the information to the waiter
 
 
 ### Computer Vision
