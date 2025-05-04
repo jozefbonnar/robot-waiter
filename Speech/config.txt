@@ -1,0 +1,5 @@
+[Number of Tables]
+count = 30
+
+[Menu]
+items = pizza, chicken, burger, fries, salad, coke, ice cream

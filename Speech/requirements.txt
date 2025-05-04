@@ -1,0 +1,4 @@
+torch
+pyttsx3
+ffmpeg
+pyaudio
