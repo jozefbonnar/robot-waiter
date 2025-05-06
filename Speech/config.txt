@@ -2,4 +2,4 @@
 count = 30
 
 [Menu]
-items = pizza, chicken, burger, fries, salad, coke, ice cream
+items = pizza, chicken, burger, chips, salad, coke, ice cream, fries, taco, pie, tata tots, tenders, meatballs, coffee, wings, shakes, pankake, pasta, pepper, tator, coak, tater

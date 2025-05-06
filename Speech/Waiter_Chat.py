@@ -274,7 +274,7 @@ class RobotWaiter:
 
             self.engine = pyttsx3.init()  # Initialize
             if self.engine: 
-                 self.engine.setProperty('rate', 180)  # Set speech rate
+                 self.engine.setProperty('rate', 220)  # Set speech rate
             else:
                 # For 'inbetween' cases where the TTS isn't working properly but hasn't neceserally failed
                 print("TTS Engine failed to initialize.") 
@@ -465,7 +465,7 @@ class RobotWaiter:
             self.speak("Speak now")  
             
             # Audio recording parameters
-            FORMAT, CHANNELS, RATE, CHUNK, RECORD_SECONDS = pyaudio.paInt16, 1, 16000, 1024, 24 
+            FORMAT, CHANNELS, RATE, CHUNK, RECORD_SECONDS = pyaudio.paInt16, 1, 16000, 1024, 10 
             
             # Open audio stream for recording
             stream = self.audio.open(format=FORMAT, channels=CHANNELS, rate=RATE, input=True, frames_per_buffer=CHUNK)
