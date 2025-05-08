@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>tse_gazebo_worlds</name>
+  <version>2.0.45</version>
+  <description>tse customed worlds with wandering human</description>
+  <maintainer email="ky@to-do.com">ky</maintainer>
+  <license>LGPL-3.0</license>
+  <author email="ky@to-do.com">ky</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>roscpp</depend>
+  <depend>gazebo_msgs</depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>pal_gazebo_plugins</exec_depend>
+  <test_depend>roscpp</test_depend>
+  <test_depend>rostest</test_depend>
+  <test_depend>gazebo_msgs</test_depend>
+
+</package>
