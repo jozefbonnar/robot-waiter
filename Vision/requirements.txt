@@ -1,0 +1,4 @@
+numpy
+record3d
+opencv-python
+mediapipe
