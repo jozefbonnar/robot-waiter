@@ -1,0 +1,11 @@
+--Static
+7.49
+11.86
+52.80
+11.83
+22.11
+fail
+fail
+fail
+fail
+fail
